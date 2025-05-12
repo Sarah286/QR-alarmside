@@ -2,86 +2,37 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>Flot klaret!</title>
+  <title>Færdig!</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
       background-color: pink;
       color: darkred;
-      font-family: sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       text-align: center;
-      overflow: hidden;
+      padding: 60px;
     }
 
     h1 {
-      margin-top: 15%;
       font-size: 3em;
+      margin-bottom: 20px;
     }
 
-    p {
+    .hearts {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+
+    .message {
       font-size: 1.5em;
-      margin-top: 1em;
-    }
-
-    .heart {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      background-color: red;
-      transform: rotate(45deg);
-      animation: float 6s infinite ease-in;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      background-color: red;
-      border-radius: 50%;
-    }
-
-    .heart::before {
-      top: -15px;
-      left: 0;
-    }
-
-    .heart::after {
-      top: 0;
-      left: -15px;
-    }
-
-    @keyframes float {
-      0% {
-        top: 100%;
-        left: calc(50% + (100px * (random() - 0.5)));
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        top: -50px;
-        opacity: 0;
-      }
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+  <div class="hearts">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</div>
   <h1>FLOT KLARET!</h1>
-  <p>Gå nu videre til jeres helt egne knapper ❤️</p>
-
-  <!-- Hjerter -->
-  <script>
-    for (let i = 0; i < 25; i++) {
-      const heart = document.createElement("div");
-      heart.className = "heart";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDelay = Math.random() * 5 + "s";
-      document.body.appendChild(heart);
-    }
-  </script>
-</body>
-</html>
+  <h2>SKÅL</h2>
+  <div class="message">
+    Gå nu videre til jeres helt egne knapper &lt;3
+  </div>
+  <div class="hearts">💖💖💖💖💖💖💖💖
