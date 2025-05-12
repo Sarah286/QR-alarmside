@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>UL Alarm</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: red;
+      color: white;
+      font-family: sans-serif;
+      font-size: 1.8em;
+      text-align: center;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%   { background-color: red; }
+      50%  { background-color: black; }
+      100% { background-color: red; }
+    }
+
+    .content {
+      margin-top: 10%;
+      padding: 0 20px;
+    }
+
+    button {
+      font-size: 1em;
+      padding: 0.5em 1em;
+      margin-top: 2em;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: white;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <p>‼️ ULTRALYD-ALARM ‼️</p>
+    <p><strong>KALDER DR. KJØLLER!</strong></p>
+    <p>HJERTETAMPPONADE PÅVIST!</p>
+    <p>UL-apparatet registrerer kraftig væskeophobning i perikardiet.</p>
+    <p>➤ Hjertekompression nedsat<br>
+       ➤ Blodtryk faldende<br>
+       ➤ Halsvenestase observeret</p>
+    <p>🔴 AKUTTILSTAND<br>
+       ▶︎ UDFØR PERIKARDIOCENTESE STRAKS ◀︎</p>
+    <p><strong>LIVSTRUENDE TILSTAND – TID ER LIV</strong></p>
+
+    <button onclick="window.location.href='naeste.html'">
+      Perikardiocentese udført – gå videre her
+    </button>
+  </div>
+</body>
+</html>
